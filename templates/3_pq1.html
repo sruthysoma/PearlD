@@ -1,0 +1,708 @@
+<!-- {% extends "0_base.html" %} {% block title %}PQ1{% endblock %} {% block content%}
+
+<br/><br/> 
+ <div align="center"> -->
+  <form action="{{ url_for('predict_pq1') }}" method="POST">
+
+ <div class="instructions">
+    <h3 ><b><br> SCOPA AUT</b></h3>
+    Based on your experiences over the past month, answer the following: 
+    <br><br>Rate the following activities on a scale of 0 to 3:<br>
+    <ul style="list-style-type:none;">
+      <li>0 : never</li>
+      <li> 1 : sometimes</li>
+      <li>2 : regularly</li>
+      <li>3 : often</li>
+
+    </ul>  
+    
+    
+   
+    
+    
+  
+  </div>
+    <br/><br/>
+
+  <div class="questionsection">
+    <p class="qno">1.</p>
+  <div class="questioncontainer">
+    <label for="SCAU1" > Have you had difficulty swallowing or have you choked?</label><br>
+  
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU1" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU1" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU1" value="2" checked >  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU1" value="3">  3</input>
+  </div>
+  </div>
+  </div>
+  
+    <div class="questionsection">
+    <p class="qno">2.</p>
+  <div class="questioncontainer">
+  <br><br><label for="SCAU2"> Has saliva dribbled out of your mouth?</label><br>
+  <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU2" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU2" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU2" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU2" value="3" checked >  3</input>
+</div>
+  </div>
+  </div>
+    
+     <div class="questionsection">
+    <p class="qno">3.</p>
+  <div class="questioncontainer"> 
+    <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU3" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU3" value="1" checked >  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU3" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU3" value="3">  3</input>
+</div>
+  </div>
+  </div>
+    
+    <div class="questionsection">
+    <p class="qno">4.</p>
+  <div class="questioncontainer">  
+    <br><br><label for="SCAU4"> Did you ever have the feeling during a meal that you were full very quickly?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU4" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU4" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU4" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU4" value="3" checked >  3</input>
+</div>
+  </div>
+  </div>
+    
+    <div class="questionsection">
+    <p class="qno">5.</p>
+  <div class="questioncontainer">  
+    <br><br><label for="SCAU5">Have you had problems with constipation?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU5" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU5" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU5" value="2" checked >  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU5" value="3">  3</input>
+</div>
+  </div>
+  </div>
+    
+     <div class="questionsection">
+    <p class="qno">6.</p>
+  <div class="questioncontainer"> 
+    <br><br><label for="SCAU6"> Did you have to strain hard to pass stools?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU6" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU6" value="1" checked >  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU6" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU6" value="3">  3</input>
+</div>
+  </div>
+  </div>
+    
+    <div class="questionsection">
+    <p class="qno">7.</p>
+  <div class="questioncontainer">  
+    <br><br><label for="SCAU7"> Have you had involuntary loss of stools?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU7" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU7" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU7" value="2" checked >  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU7" value="3">  3</input>
+</div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="instructions">
+    Rate the following activities on a scale of 0 to 3
+    <br>0 : never
+    <br>1 : sometimes
+    <br>2 : regularly
+    <br>3 : often
+    <br>9 : use catheter
+  </div>
+    <br>
+    <br>
+  <div class="questionsection">
+    <p class="qno">8.</p>
+  <div class="questioncontainer">  
+    
+
+    <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU8" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU8" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU8" value="2" checked >  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU8" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU8" value="9">  9</input>
+</div>
+</div>
+</div>
+    
+<div class="questionsection">
+  <p class="qno">9.</p>
+<div class="questioncontainer">  
+    <br><br><label for="SCAU9"> Have you had involuntary loss of urine?</label><br/>
+  <div class="answerOptions">
+
+    <input type="radio" id="0" name="SCAU9" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU9" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU9" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU9" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU9" value="9" checked>  9</input>
+</div></div></div>
+    
+    <div class="questionsection">
+      <p class="qno">10.</p>
+    <div class="questioncontainer">  
+    <br><br><label for="SCAU10">Have you had the feeling that after passing urine your bladder was not completely empty?</label><br/>
+    <div class="answerOptions">
+        <input type="radio" id="0" name="SCAU10" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU10" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU10" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU10" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU10" value="9">  9</input>
+</div></div></div>
+    
+    <div class="questionsection">
+      <p class="qno">11.</p>
+    <div class="questioncontainer">  
+    <br><br><label for="SCAU11"> Has the stream of urine been weak?</label><br/>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="SCAU11" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU11" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU11" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU11" value="3" checked>  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU11" value="9">  9</input>
+</div></div></div>
+    
+    <div class="questionsection">
+      <p class="qno">12. </p>
+    <div class="questioncontainer">  
+    <br><br><label for="SCAU12">Have you had to pass urine again within 2 hours of the previous time?</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="SCAU12" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU12" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU12" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU12" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU12" value="9" checked>  9</input>
+</div></div></div>
+    
+    <div class="questionsection">
+      <p class="qno">13. </p>
+    <div class="questioncontainer">  
+    <br><br><label for="SCAU13">Have you had to pass urine at night?</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="SCAU13" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU13" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU13" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU13" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="9" name="SCAU13" value="9" checked>  9</input>
+</div></div></div>
+
+    <br><br>
+    
+    <div class="instructions">
+    Rate the following activities on a scale of 0 to 3
+    <br>0 : never
+    <br>1 : sometimes
+    <br>2 : regularly
+    <br>3 : often
+  </div>
+  <br><br>
+    <div class="questionsection">
+    <p class="qno">14.</p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU14"> In the past month, when standing up have you had the feeling of either becoming lightheaded, or no longer being able to see properly, or no longer being able to think clearly?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU14" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU14" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU14" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU14" value="3" checked>  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">15. </p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU15">Did you become light-headed after standing for some time?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU15" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU15" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU15" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU15" value="3">  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">16. </p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU16">Did you become light-headed after standing for some time?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU16" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU16" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU16" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU16" value="3">  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">17. </p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU17">Have you ever perspired excessively during the day?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU17" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU17" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU17" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU17" value="3" checked>  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">18. </p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU18">Have you ever perspired excessively during the night?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU18" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU18" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU18" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU18" value="3">  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">19. </p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU19">Have your eyes ever been over-sensitive to bright light?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU19" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU19" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU19" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU19" value="3">  3</input>
+  </div></div></div> 
+    
+    <div class="questionsection">
+    <p class="qno">20.</p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU20"> How often have you had trouble tolerating cold?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU20" value="0" checked>  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU20" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU20" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU20" value="3">  3</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">21.</p>
+  <div class="questioncontainer">  
+    
+
+    <!-- <br><br><label for="SCAU8"> Have you had difficulty retaining urine?</label><br/> -->
+    <br><br><label for="SCAU21"> How often have you had trouble tolerating cold?</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="0" name="SCAU21" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU21" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="SCAU21" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="SCAU21" value="3" checked>  3</input>
+</div></div></div>
+<br><br><br>
+  <div class="instructions"><h4><b>22. Have you used medication for:  </b></h4></div>
+  <br><br>  
+  <div class="questionsection">
+    <p class="qno">22a. </p>
+  <div class="questioncontainer">  
+      <br><br><label for="SCAU26A">constipation?</label><br/>
+      <div class="answerOptions">   
+      <input type="radio" id="0" name="SCAU26A" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU26A" value="1" checked>  YES</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">22b. </p>
+  <div class="questioncontainer">  
+    <!-- <br><br><label for="SCAU21"> How often have you had trouble tolerating cold?</label><br/> -->
+    <br><br><label for="SCAU26B">urinary problems?</label><br/>
+    <div class="answerOptions">   
+      <input type="radio" id="0" name="SCAU26B" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU26B" value="1" checked>  YES</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">22c.</p>
+  <div class="questioncontainer">  
+    <!-- <br><br><label for="SCAU21"> How often have you had trouble tolerating cold?</label><br/> -->
+    <br><br><label for="SCAU26C"></label> blood pressure?</label><br/>
+    <div class="answerOptions">   
+      <input type="radio" id="0" name="SCAU26C" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU26C" value="1"checked>  YES</input>
+</div></div></div>
+    
+    <div class="questionsection">
+    <p class="qno">22d. </p>
+  <div class="questioncontainer">  
+    <!-- <br><br><label for="SCAU21"> How often have you had trouble tolerating cold?</label><br/> -->
+    <br><br><label for="SCAU26D">other symptoms (not symptoms related to Parkinson’s Disease)?</label><br/>
+    <div class="answerOptions">   
+      <input type="radio" id="0" name="SCAU26D" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SCAU26D" value="1"checked>  YES</input>
+</div></div></div>
+
+<br><br>
+<div class="instructions">
+    <h3><b><br> Epworth Sleepiness Scale </b></h3>
+    How likely are you to doze off or fall asleep in the following situations, in contrast to just feeling tired? This refers to your usual way of life in recent times. Even if you haven't done some of these things recently try to work out how they would have affected you. Use the following scale and choose the most appropriate number for each sitation: 
+    <br><br>Rate the following activities on a scale of 0 to 3
+    <br>0 : would never dose
+    <br>1 : slight chance of dozing
+    <br>2 : moderate chance of dozing
+    <br>3 : high chance of dozing
+  </div>
+    <br/><br/>
+
+
+    
+         <div class="questionsection">
+    <p class="qno">1.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <label for="ESS1"> Sitting and reading </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS1" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS1" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS1" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS1" value="3">  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">2. </p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS2">Watching TV </label></br>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="ESS2" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS2" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS2" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS2" value="3" checked>  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">3.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS3">3. Sitting inactive in a public place (theater or meeting for example) </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS3" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS3" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS3" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS3" value="3">  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">4. </p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS4">As a passenger in a car for an hour without a break </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS4" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS4" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS4" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS4" value="3">  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">5.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS5">Lying down to rest in the afternoon when circumstamces permit </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS5" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS5" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS5" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS5" value="3" checked>  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">6.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS6"> Sitting and talking to someone </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS6" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS6" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS6" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS6" value="3" checked>  3</input>
+</div></div></div>
+
+         <div class="questionsection">
+    <p class="qno">7.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="SCAU3">Has food ever become stuck in your throat?</label><br/> -->
+    <br><br><label for="ESS7">Sitting quitely after lunch without alcohol </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS7" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS7" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS7" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS7" value="3">  3</input>
+</div></div></div>
+    
+         <div class="questionsection">
+    <p class="qno">8.</p>
+  <div class="questioncontainer"> 
+    <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br>
+    <div class="answerOptions">
+    <input type="radio" id="0" name="ESS8" value="0">  0</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="ESS8" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="ESS8" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="ESS8" value="3" checked>  3</input>
+</div></div></div>
+    <br><br>
+
+    <div class="instructions">
+    <h3><b><br> REM (Rapid Eye Movement) Sleep Disorder </b></h3>
+
+    <br><br>Rate the following activities as YES or N0.
+  
+  
+</div>
+<br><br>
+
+
+         <div class="questionsection">
+    <p class="qno">1.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <label for="DRMVIVID"> I sometimes have very vivid dreams.</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMVIVID" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMVIVID" value="1"  checked> YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">2.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMAGRAC">My dreams frequently have an aggressive or action-packed content.</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMAGRAC" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMAGRAC" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">3.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMNOCTB">The dream contents mostly match my nocturnal behaviour.</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMNOCTB" value="0" checked>  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMNOCTB" value="1">  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">4.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="SLPLMBMV">I know that my arms or legs move when I sleep.</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="SLPLMBMV" value="0" checked>  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SLPLMBMV" value="1">  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">5.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="SLPINJUR"> I (almost) hurt my bed partner or myself in my sleep.</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="SLPINJUR" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SLPINJUR" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">6.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <h4><b><br>I have or had the following phenomena during my dreams: </b></h4>
+    <br><br><label for="DRMVERBL"> speaking, shouting, sweating, laughing loudly</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMVERBL" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMVERBL" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">6b.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMFIGHT"> sudden limb movements, "fights"</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMFIGHT" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMFIGHT" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">6c.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMUMV"> gesture, complex movements that are useless during sleep</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMUMV" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMUMV" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">6d.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMOBJFL"> things that fell down around the bed</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMOBJFL" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMOBJFL" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">7.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="MVAWAKEN">My movements awake me.</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="MVAWAKEN" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="MVAWAKEN" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">8.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DRMREMEM"> After awakening I mostly remember the content of my dreams well.</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DRMREMEM" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DRMREMEM" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">9.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="SLPDSTRB">My sleep is frequently disturbed.</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="SLPDSTRB" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="SLPDSTRB" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10a.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <h4><b><br>I have/had a disease of the nervous system: </b></h4>
+    <br><br><label for="STROKE"> Stroke </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="STROKE" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="STROKE" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10b.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="HETRA"> Head Trauma </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="HETRA" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="HETRA" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10c.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="PARKISM"> Parkinsonism </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="PARKISM" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="PARKISM" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10d.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="RLS"> RLS </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="RLS" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="RLS" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10e.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="NARCLPSY"> Narcolepsy </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="NARCLPSY" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="NARCLPSY" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10f.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="DEPRS"> Depression </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="DEPRS" value="0 checked">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="DEPRS" value="1">  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10g. </p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="EPILEPSY">Epilepsy </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="EPILEPSY" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="EPILEPSY" value="1" checked>  YES</input>
+</div></div></div>
+    
+             <div class="questionsection">
+    <p class="qno">10h. </p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="BRNINFM">Inflammatory disease of the brain </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="BRNINFM" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="BRNINFM" value="1" checked>  YES</input>
+</div></div></div>
+
+             <div class="questionsection">
+    <p class="qno">10i.</p>
+  <div class="questioncontainer"> 
+    <!-- <br><br><label for="ESS8">In a car, while stopped for a few minutes in the traffic </label><br> -->
+    <br><br><label for="CNSOTH"> Other </label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="0" name="CNSOTH" value="0">  NO</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="1" name="CNSOTH" value="1" checked>  YES</input>
+</div></div></div>
+
+    <br><br><br><button type="submit" class="btn" style="width:6%;height:3%; display:flex;align-items: center;justify-content: center;flex-direction: column;margin-top: 41px; gap:20px;color:white;background-color: #262a3a">Next ></button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br/><br/><br/><br/>
+  </form>
+
+{% endblock %}

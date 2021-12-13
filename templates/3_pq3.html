@@ -1,0 +1,304 @@
+<!-- {% extends "0_base.html" %} {% block title %}PQ3{% endblock %} {% block content%} -->
+
+<div class="instructions">
+<h3><b><br> Upper Extremity Function</b></h3>
+The Upper Extremity Functional Index (UEFI) is a patient reported outcome measure used to assess the functional impairment in individuals with musculoskeletal upper limb dysfunction.
+<br><br>Rate the following activities on a scale of 1 to 5
+<br>1 : unable to do
+<br>2 : with much difficulty
+<br>3 : with some difficulty
+<br>4 : with a little difficulty
+<br>5 : without any difficulty
+</div>
+<br/><br/>
+<!-- <div align="center"> -->
+  <form action="{{ url_for('predict_pq3') }}" method="POST">
+    <div class="questionsection">
+      <p class="qno">1.</p>
+    <div class="questioncontainer"> 
+    <label for="NQUEX29"> Able to turn key in lock</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX29" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX29" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX29" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX29" value="4" >  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX29" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">2.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX20"> Able to brush your teeth</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX20" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX20" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX20" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX20" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX20" value="5" >  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">3.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX44"> Able to make a call using touch tone keypad</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX44" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX44" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX44" value="3" checked >  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX44" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX44" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">4.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX36">Able to pick up coins from a table</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX36" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX36" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX36" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX36" value="4" >  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX36" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">5.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX30"> Able to write with pen or pencil</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX30" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX30" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX30" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX30" value="4" >  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX30" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">6.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX28"> Able to open and close a zipper</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX28" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX28" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX28" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX28" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX28" value="5" >  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">7.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX33">Able to wash and dry your body</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX33" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX33" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX33" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX33" value="4" >  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX33" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">8.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQUEX37">Able to shampoo your hair</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQUEX37" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQUEX37" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQUEX37" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQUEX37" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQUEX37" value="5" >  5</input>
+    </div></div></div>
+<br><br>
+
+<div class="instructions">
+    <h3><b><br> Lower Extremity Function</b></h3>
+    The Lower Extremity Functional Scale (LEFS) is a questionnaire about a person's ability to perform everyday tasks.
+    <br><br>Rate the following activities on a scale of 1 to 5
+    <br>1 : unable to do
+    <br>2 : with much difficulty
+    <br>3 : with some difficulty
+    <br>4 : with a little difficulty
+    <br>5 : without any difficulty
+  </div>
+    <br/><br/><br/>
+
+    <div class="questionsection">
+      <p class="qno">1.</p>
+    <div class="questioncontainer"> 
+    <label for="NQMOB37"> Able to get on and off toilet</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB37" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB37" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB37" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB37" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB37" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">2.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB30">Able to step up and down curbs</label><br>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB30" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB30" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB30" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB30" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB30" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">3.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB26">Able to get in and out of car</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB26" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB26" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB26" value="3" checked>  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB26" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB26" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">4.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB32"> Able to get out of bed into chair</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB32" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB32" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB32" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB32" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB32" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">5.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB25"> Able to push open a heavy door</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB25" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB25" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB25" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB25" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB25" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">6.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB33"> Able to run errands and shop</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB33" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB33" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB33" value="3" checked>  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB33" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB33" value="5">  5</input>
+</div></div></div>
+
+        <div class="questionsection">
+      <p class="qno">7.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB31">Able to get off floor without help</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB31" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB31" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB31" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB31" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB31" value="5">  5</input>
+</div></div></div>
+    
+        <div class="questionsection">
+      <p class="qno">8.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQMOB28"> Able to go for walk at least 15 min</label><br/>
+    <div class="answerOptions">
+      <input type="radio" id="1" name="NQMOB28" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQMOB28" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQMOB28" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQMOB28" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQMOB28" value="5">  5</input>
+    </div></div></div>
+    <br><br><br>
+    
+  <div class="instructions">
+    <h3><b><br> Communication Short Form </b></h3>
+    DESCRIPTION
+    <br><br>Rate the following activities on a scale of 1 to 5
+    <br>1 : unable to do
+    <br>2 : with much difficulty
+    <br>3 : with some difficulty
+    <br>4 : with a little difficulty
+    <br>5 : without any difficulty
+  </div>
+    <br/><br/>
+
+
+    <div class="questionsection">
+      <p class="qno">1.</p>
+    <div class="questioncontainer"> 
+    <label for="NQCOG01"> Writing notes to yourself</label><br>
+    <div class="answerOptions">    
+      <input type="radio" id="1" name="NQCOG01" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQCOG01" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQCOG01" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQCOG01" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQCOG01" value="5">  5</input>
+</div></div></div>
+
+
+    <div class="questionsection">
+      <p class="qno">2.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQCOG04">Understanding family/friends- phone</label><br>
+    <div class="answerOptions">    
+      <input type="radio" id="1" name="NQCOG04" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQCOG04" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQCOG04" value="3" checked>  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQCOG04" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQCOG04" value="5">  5</input>
+</div></div></div>
+
+
+    <div class="questionsection">
+      <p class="qno">3.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQCOG08">Conversation with small group</label><br/>
+    <div class="answerOptions">  
+      <input type="radio" id="1" name="NQCOG08" value="1" checked>  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQCOG08" value="2">  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQCOG08" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQCOG08" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQCOG08" value="5">  5</input>
+</div></div></div>
+
+
+    <div class="questionsection">
+      <p class="qno">4.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQCOG10"> Organizing what you want to say</label><br/>
+    <div class="answerOptions">    
+      <input type="radio" id="1" name="NQCOG10" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQCOG10" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQCOG10" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQCOG10" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQCOG10" value="5">  5</input>
+</div></div></div>
+
+    <div class="questionsection">
+      <p class="qno">5.</p>
+    <div class="questioncontainer"> 
+    <br><br><label for="NQCOG11"> Speaking clearly to use the phone</label><br/>
+    <div class="answerOptions">    
+      <input type="radio" id="1" name="NQCOG11" value="1">  1</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="2" name="NQCOG11" value="2" checked>  2</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="3" name="NQCOG11" value="3">  3</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="4" name="NQCOG11" value="4">  4</input>&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="5" name="NQCOG11" value="5">  5</input> 
+</div></div></div>
+
+<br><br><br><button type="submit" class="btn" style="margin-left:48%;width:6%;height:3%; display:flex;align-items: center;justify-content: center;flex-direction: column;margin-top: 41px; gap:20px;color:white;background-color: #262a3a">Next ></button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br/><br/><br/><br/>
+  </form>
+
+
+{% endblock %}
