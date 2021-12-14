@@ -22,7 +22,7 @@ The user interface is developed using the Flask framework. It consists of an app
   
 ### To run the app  
 - To run locally on your machine, 
-  -  install and set up the Flask 1.1.2 environment on your computer
+  -  install and set up the Flask 1.1.2 environment and all the other dependencies listed in the "requirements.txt" file on your computer
   -  run app.py on the terminal
   -  this launches a builtin Flask server at http://127.0.0.1:5000/
 - Or head over to https://pearld.herokuapp.com/ to view the deployed web app.  
